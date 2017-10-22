@@ -12,5 +12,10 @@ def index():
 def book(pagename):
     return render_template(pagename.lower()+'.html')
 
+@app.route('/BS')
+def BS():
+    return render_template('BryanSanderson.html')
+
 if __name__ == '__main__':
     app.run('127.0.0.1', port = 8080, debug=True)
+
