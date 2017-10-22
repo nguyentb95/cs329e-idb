@@ -13,9 +13,9 @@ install:
     - pip install flask
     - pip install coverage
     - pip install numpy
-    - pip install pytest-cov
+    - pip install pytest-flask
     - pip install requests
     - pip install gunicorn
 
 script:
-    -py.test -v
+    - py.test
