@@ -8,9 +8,14 @@ app = Flask(__name__)
 def index():
     return render_template('index.html')
 
-@app.route('/book/<bookname>')
-def book(bookname):
-    return render_template(bookname.lower()+'.html')
+@app.route('/<pagename>')
+def book(pagename):
+    return render_template(pagename.lower()+'.html')
+
+@app.route('/BS')
+def BS():
+    return render_template('BryanSanderson.html')
 
 if __name__ == '__main__':
     app.run('127.0.0.1', port = 8080, debug=True)
+

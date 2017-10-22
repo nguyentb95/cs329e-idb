@@ -1,0 +1,21 @@
+language: python
+
+python:
+   - "3.5"
+
+before_install:
+    - pip install --upgrade pip
+
+#notifications:
+  #slack: cs329e-fall-2017:TWFzxBtOzsFmRkNjOTyP3bXA
+
+install:
+    - pip install flask
+    - pip install coverage
+    - pip install numpy
+    - pip install pytest-flask
+    - pip install requests
+    - pip install gunicorn
+
+script:
+    - py.test
