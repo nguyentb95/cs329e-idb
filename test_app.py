@@ -1,7 +1,9 @@
 import pytest
-from app import index
+import unittest
+import app
 
-@pytest.fixture
-def test_index():
-    index()
-    pass
+
+class Testing(unittest.TestCase):
+    @pytest.fixture
+    def test_index(self):
+        assert app
