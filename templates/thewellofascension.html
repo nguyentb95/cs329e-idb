@@ -4,11 +4,16 @@
     <meta charset="UTF-8">
     <title>The Well of Ascension</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+<<<<<<< HEAD:templates/TheWellOfAscension.html
     <link rel=stylesheet type=text/css href="{{ url_for('static', filename='bootstrap.min.css') }}">
+=======
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+>>>>>>> master:templates/thewellofascension.html
     <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
 </head>
 <body>
     <div class="container">
+<<<<<<< HEAD:templates/TheWellOfAscension.html
         <div class="row">
             <div class="col-sm-4">
             <h1>The Well of Ascension</h1>
@@ -22,6 +27,14 @@
                 <img src="https://books.google.com/books/content/images/frontcover/Y-41Q9zk32kC?fife=w500" class="img-thumbnail" alt="The Well of Ascension">
             </div>
         </div>
+=======
+    <h1>The Well of Ascension</h1>
+    <h2>Written by</h2>
+    <a href={{ url_for('page',pagename='bryansanderson') }}><h2>Bryan Sanderson</h2></a><br/>
+    <h3>Published by</h3>
+    <a href={{ url_for('page',pagename='palgravemacmillan') }}><h3>Palgrave Macmillan</h3></a><br/>
+    <p>Google ID: Y-41Q9zk32kC</p>
+>>>>>>> master:templates/thewellofascension.html
     </div>
 </body>
 </html>
