@@ -3,9 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <title>Palgrave Macmillan</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
 </head>
 <body>
-
+    <div class="container">
     <h1>Palgrave Macmillan</h1>
     <h2>Publishing House</h2>
     <h3>Published:</h3>
@@ -13,7 +16,7 @@
     <p></p>
     <h3>Written by:</h3>
     <a href={{ url_for('page',pagename='bryansanderson') }}><p>Bryan Sanderson</p></a><br/>
-
+    </div>
 
 
 </body>

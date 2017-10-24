@@ -2,9 +2,13 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
     <title>Digital Binding</title>
 </head>
 <body>
+    <div class="container">
     <h1>Digital Binding, LLC</h1>
     <h2>If you need to contact us, call us at 1-800-FUCK-OFF</h2>
     <h3>Books</h3>
@@ -18,5 +22,15 @@
     <h3>Publishers</h3>
 	<a href={{ url_for('page',pagename='palgravemacmillan') }}><p>Palgrave Macmillan</p></a><br/>
 	<a href={{ url_for('page',pagename='harpercollins') }}><p>HarperCollins</p></a><br/>
+
+        <blockquote>
+        <p>The best internet concept I've seen in centuries!</p>
+            <footer>Brian Duckworthy III, New York Times</footer>
+        </blockquote>
+        <blockquote>
+            <p>25 million people can't be wrong. Can they?</p>
+            <footer>Jared, from Subway</footer>
+        </blockquote>
+    </div>
 </body>
 </html>
