@@ -3,9 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <title>Bryan Sanderson</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel=stylesheet type=text/css href="{{ url_for('static', filename='bootstrap.min.css') }}">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
 </head>
 <body>
-
+    <div class="container">
+    <div class="row">
+    <div class="col-sm-4">
     <h1>Bryan Sanderson</h1>
     <h2>Author</h2>
     <h3>Author of:</h3>
@@ -13,7 +18,12 @@
     <p></p>
     <h3>Published by:</h3>
     <a href={{ url_for('page',pagename='palgravemacmillan') }}><p>Palgrave Macmillan</p></a><br/>
-
+    </div>
+        <div class="col-sm-8">
+            <img src="http://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Brandon_Sanderson_sign.jpg/250px-Brandon_Sanderson_sign.jpg" class="img-thumbnail" alt="Bryan Sanderson">
+        </div>
+    </div>
+    </div>
 
 
 </body>
