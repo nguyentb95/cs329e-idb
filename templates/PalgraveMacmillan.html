@@ -4,11 +4,13 @@
     <meta charset="UTF-8">
     <title>Palgrave Macmillan</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel=stylesheet type=text/css href="{{ url_for('static', filename='bootstrap.min.css') }}">
     <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
 </head>
 <body>
     <div class="container">
+    <div class="row">
+    <div class="col-sm-4">
     <h1>Palgrave Macmillan</h1>
     <h2>Publishing House</h2>
     <h3>Published:</h3>
@@ -16,6 +18,11 @@
     <p></p>
     <h3>Written by:</h3>
     <a href={{ url_for('page',pagename='bryansanderson') }}><p>Bryan Sanderson</p></a><br/>
+    </div>
+    <div class="col-sm-8">
+    <img src="data:image/png;base64,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" class="img-thumbnail" alt="Palgrave Macmillan">
+    </div>
+    </div>
     </div>
 
 
