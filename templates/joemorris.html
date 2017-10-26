@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JT Morris</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel=stylesheet type=text/css href="{{ url_for('static', filename='bootstrap.min.css') }}">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+</head>
+<body>
+    <nav class="navbar navbar-default">
+    <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="{{ url_for('page', pagename='index') }}">Home</a>
+    </div>
+    </div>
+    </nav>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-8">
+                <h1>JT Morris</h1>
+                <h2>Chief Visionary Officer and Head of Crow's Nest </h2>
+                <h3>Responsibilites</h3>
+                <ul>
+                    <li>Designed TKAMB Book page</li>
+                    <li>Designed TKAMB Author page</li>
+                    <li>Designed TKAMB Publisher page</li>
+                </ul>
+                <h3>8 commits</h3>
+                <h3>6 Issues</h3>
+            </div>
+            <div class="col-sm-4">
+                <div style="max-width: 800px;">
+                <img src="{{ url_for('static', filename='JT.jpg') }}"  style="max-width:100%;">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
