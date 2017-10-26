@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Naren Makkapati</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel=stylesheet type=text/css href="{{ url_for('static', filename='bootstrap.min.css') }}">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+</head>
+<body>
+    <nav class="navbar navbar-default">
+    <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="{{ url_for('page', pagename='index') }}">Home</a>
+    </div>
+    </div>
+    </nav>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-8">
+                <h1>Naren Makkapati</h1>
+                <h2>Assistant Vice President for Synergy and Inter-pirate Relations</h2>
+                <h3>Responsibilites</h3>
+                <ul>
+                    <li>Design website structure</li>
+                    <li>Establish style standards</li>
+                    <li>Oversee version control</li>
+                </ul>
+                <a href="https://github.com/nguyentb95/cs329e-idb/commits?author=nmakkapati" class="link-gray text-normal"><h3>37 commits</h3></a>
+                <h3>12 Issues</h3>
+            </div>
+            <div class="col-sm-4">
+                <img src="{{ url_for('static', filename='narenmakkapati.jpg') }}">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
