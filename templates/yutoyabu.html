@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Yuto Yabu</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel=stylesheet type=text/css href="{{ url_for('static', filename='bootstrap.min.css') }}">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+</head>
+<body>
+    <nav class="navbar navbar-default">
+    <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="{{ url_for('page', pagename='index') }}">Home</a>
+    </div>
+    </div>
+    </nav>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="col-sm-8">
+                    <h1>Yuto Yabu</h1>
+                </div>
+                <div class="col-sm-8">
+                    <h2 style="font-size: 25px;">Integrator for Business and Product</h2>
+                </div>
+            </div>
+            <div class="col-sm-8">
+                <div class="col-sm-12">
+                    <div class="col-sm-2">
+                        <h3>Major：</h3>
+                    </div>
+                    <div class="col-sm-4">
+                        <h3>Economics</h3>
+                    </div>
+                </div>
+                <div class="col-sm-12">
+                    <div class="col-sm-3">
+                        <h3>Responsibilites：</h3>
+                    </div>
+                    <div class="col-sm-10">
+                        <ul>
+                        <li>Contribute Home HTML Page</li>
+                        <li>Create Content HTML Page</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-12">
+                    <div class="col-sm-5">
+                        <h3>Number of commits：</h3>
+                    </div>
+                    <div class="col-sm-4">
+                        <a href="https://github.com/nguyentb95/cs329e-idb/commits?author=yyuto6012" class="link-gray text-normal"><h3>9 commits</h3></a>
+                    </div>
+                </div>
+                <div class="col-sm-12">
+                    <div class="col-sm-5">
+                        <h3>Number of Issues：</h3>
+                    </div>
+                    <div class="col-sm-4">
+                        <h3>3 issues</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <img src="{{ url_for('static', filename='yutoyabu.jpg') }}" style="width: 300px; height: 300px; margin-top: 20px">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
