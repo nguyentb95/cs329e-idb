@@ -5,7 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel=stylesheet type=text/css href="{{ url_for('static', filename='bootstrap.min.css') }}">
     <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+    <link href="https://fonts.googleapis.com/css?family=Garamond" rel="stylesheet" type="text/css">
     <title>Digital Binding</title>
+
+    <style>
+        .jumbotron
+        {
+            background-color: #2980b9;
+            color: #ffffff;
+            padding: 100px 25px;
+            font-family: Garamond;
+        }
+    </style>
 </head>
 <body>
    <nav class="navbar navbar-default">
@@ -18,10 +29,13 @@
       </ul>
   </div>
    </nav>
+   <div class="jumbotron text-center">
+       <h1>Digital Binding, LLC</h1>
+   </div>
+
     <div class="container">
         <div class="row">
             <div class="col-sm-4">
-    <h1>Digital Binding, LLC</h1>
 
     <h2>Models</h2>
     <a href={{ url_for('page',pagename='bookmodel') }}><p>Book Model</p></a><br/>
