@@ -3,15 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <link rel=stylesheet type=text/css href="{{ url_for('static', filename='bootstrap.min.css') }}">
-    <title>Title</title>
+    <link rel=stylesheet type=text/css href="{{ url_for('static', filename='bootstrap.min.css') }}">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+    <title>Simon & Schuster</title>
 </head>
 <body>
-    <h1>Simon & Schuster</h1>
-    <h2>Publishing House</h2>
-    <h3>Published:</h3>
-    <a href={{ url_for('page',pagename='theemperorofallmaladies') }}><p>The Emperor of All Maladies</p></a><br/>
-    <p></p>
-    <h3>Written by:</h3>
-    <a href={{ url_for('page',pagename='siddharthamukherjee') }}><h2>Siddhartha Mukherjee</h2></a><br/>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4">
+            <h1>Simon & Schuster</h1>
+            <h2>Publishing House</h2>
+            <h2>Published:</h2>
+            <a href={{ url_for('page',pagename='theemperorofallmaladies') }}><h2>The Emperor of All Maladies</h2></a><br/>
+            <p></p>
+            <h2>Written by:</h2>
+            <a href={{ url_for('page',pagename='siddharthamukherjee') }}><h2>Siddhartha Mukherjee</h2></a><br/>
+            </div>
+            <div class="col-sm-8">
+                <img src="http://upload.wikimedia.org/wikipedia/en/thumb/d/db/Simon_and_Schuster.svg/200px-Simon_and_Schuster.svg.png" class="img-thumbnail" alt="Simon & Schuster">
+            </div>
+        </div>
+    </div>
 </body>
 </html>
