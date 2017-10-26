@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel=stylesheet type=text/css href="{{ url_for('static', filename='bootstrap.min.css') }}">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+    <script src="{{ url_for('static', filename='sorttable.js') }}"></script>
+    <title>Digital Binding</title>
+
+</head>
+<body>
+
+    <h1>Available Books</h1>
+    <table class="sortable">
+        <tr>
+            <th>Title</th>
+            <th>ISBN</th>
+            <th>Author</th>
+            <th>Publisher</th>
+            <th>Pages</th>
+            <th>YearPublished</th>
+        </tr>
+        <tr>
+            <td><a href={{ url_for('page',pagename='theemperorofallmaladies') }}><p>The Emperor of All Maladies</p></a></td>
+            <td>9781439107959</td>
+            <td><a href={{ url_for('page',pagename='siddharthamukherjee') }}><p>Siddhartha Mukherjee</p></a></td>
+            <td></td>
+            <td>571</td>
+            <td>2010</td>
+        </tr>
+        <tr>
+            <td><a href={{ url_for('page',pagename='thewellofascension') }}><p>The Well of Ascension</p></a></td>
+            <td>9780765316882</td>
+            <td><a href={{ url_for('page',pagename='bryansanderson') }}><p>Bryan Sanderson</p></a></td>
+            <td></td>
+            <td>590</td>
+            <td>2007</td>
+        </tr>
+        <tr>
+            <td><a href={{ url_for('page',pagename='tokillamockingbird') }}><p>To Kill a Mockingbird</p></a></td>
+            <td>9780061120084</td>
+            <td><a href={{ url_for('page',pagename='harperlee') }}><p>Harper Lee</p></a></td>
+            <td></td>
+            <td>324</td>
+            <td>1960</td>
+        </tr>
+    </table>
+
+</body>
+</html>
