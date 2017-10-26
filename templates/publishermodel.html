@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel=stylesheet type=text/css href="{{ url_for('static', filename='bootstrap.min.css') }}">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+    <script src="{{ url_for('static', filename='sorttable.js') }}"></script>
+    <title>Digital Binding</title>
+
+</head>
+<body>
+
+    <h1>Available Publishers</h1>
+    <table class="sortable">
+        <tr>
+            <th>Name</th>
+            <th>ParentCompany</th>
+            <th>ParentCountry</th>
+            <th>2014Revenue</th>
+            <th>YearEstablished</th>
+            <th>BookCount</th>
+        </tr>
+        <tr>
+            <td><a href={{ url_for('page',pagename='simonschuster') }}><p>Simon Schuster</p></a></td>
+            <td>CBS Corporation</td>
+            <td>United States of America</td>
+            <td></td>
+            <td>1924</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><a href={{ url_for('page',pagename='palgravemacmillan') }}><p>Palgrave MacMillan</p></a></td>
+            <td>Springer Nature</td>
+            <td>United Kingdom</td>
+            <td></td>
+            <td>2000</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><a href={{ url_for('page',pagename='harpercollins') }}><p>HarperCollins</p></a></td>
+            <td>News Corp</td>
+            <td>United States</td>
+            <td></td>
+            <td>1989</td>
+            <td></td>
+        </tr>
+    </table>
+
+</body>
+</html>
