@@ -1,0 +1,819 @@
+commit 0c8aee6fe3acbc45f077cf2b198794eca2028da2
+Author: sdtran <steventran@utexas.edu>
+Date:   Thu Oct 26 17:43:18 2017 -0500
+
+    Update of commit counter
+
+commit 2c086a7c4096a2fe2550808b6d7a4b3c05bddcfa
+Merge: e4df1c9 c8e809a
+Author: sdtran <steventran@utexas.edu>
+Date:   Thu Oct 26 17:32:43 2017 -0500
+
+    Merge branch 'dev'
+
+commit c8e809aac7f5b83515e1eaf34461274555029240
+Author: sdtran <steventran@utexas.edu>
+Date:   Thu Oct 26 17:32:20 2017 -0500
+
+    Updated data sources in about page
+
+commit e4df1c99ffef34577e4454ee3c53bbea68bc7673
+Merge: 7c923b0 b13c875
+Author: nguyentb95 <tolanbien2@gmail.com>
+Date:   Thu Oct 26 15:24:00 2017 -0500
+
+    Merge pull request #42 from nguyentb95/dev
+    
+    Dev
+
+commit b13c8755c95acfac42fb652b9053c1401aac04f6
+Author: AZ-SU\az-su <tolanbien2@gmail.com>
+Date:   Thu Oct 26 15:18:40 2017 -0500
+
+    tolan picture
+
+commit 94df955ecc8e05e4b2183ae037e16e17bf586c61
+Author: AZ-SU\az-su <tolanbien2@gmail.com>
+Date:   Thu Oct 26 15:16:28 2017 -0500
+
+    tolan's bio
+
+commit e697946d615eae324f04d3f06b758dd71c2e8740
+Author: yyuto6012 <(yyabu0618@gmail.com)>
+Date:   Thu Oct 26 13:45:07 2017 -0500
+
+    modified
+
+commit 5c8f9f62fec7f2fcd1fcbf3c55d08357479e4880
+Author: yyuto6012 <(yyabu0618@gmail.com)>
+Date:   Thu Oct 26 13:44:55 2017 -0500
+
+    create my page
+
+commit 33bcaafe430b60846dd9a7b622fb4cc9f3cacf3f
+Author: sdtran <steventran@utexas.edu>
+Date:   Thu Oct 26 13:22:22 2017 -0500
+
+    Fixing Steven's garbage, too
+
+commit 1cea435f429f6500ab198ba38207e2bc3d4c8d54
+Author: nmakkapati <nmakkapati@gmail.com>
+Date:   Thu Oct 26 13:18:20 2017 -0500
+
+    Fixed Steven's Garbage
+
+commit c1f7f00db4cee69c661cb0e252f3bf6365324384
+Author: sdtran <steventran@utexas.edu>
+Date:   Thu Oct 26 12:56:22 2017 -0500
+
+    Update about page with data osurces
+
+commit 2cf203acc1d31fa7af2ae3894e01fdc3074290e5
+Merge: 78d8aac 7846512
+Author: sdtran <steventran@utexas.edu>
+Date:   Thu Oct 26 12:54:00 2017 -0500
+
+    Merge branch 'dev' of https://github.com/nguyentb95/cs329e-idb into dev
+
+commit 78d8aacfaaa9dcbd2e06d5223ca75846ad2cd084
+Author: sdtran <steventran@utexas.edu>
+Date:   Thu Oct 26 12:53:55 2017 -0500
+
+    Added links to repo, issues, wiki
+
+commit 78465128cc798a04f36d5fcf1fad170c81fcc4c9
+Author: JTMorris13 <joetylermorris13@gmail.com>
+Date:   Thu Oct 26 12:40:25 2017 -0500
+
+    edited JT bio page
+
+commit 7c923b03816b030904eff15983af5ead68f7809a
+Merge: b3d774c e524c1b
+Author: nmakkapati <nmakkapati@gmail.com>
+Date:   Thu Oct 26 12:37:28 2017 -0500
+
+    Merge remote-tracking branch 'origin/dev' into dev
+
+commit b3d774c3324485f46df4f8ec7b75366e75cf580c
+Author: nmakkapati <nmakkapati@gmail.com>
+Date:   Thu Oct 26 12:37:20 2017 -0500
+
+    Updated about page
+
+commit e524c1b5dcd176c5e35dae4c10446267109506f3
+Author: JTMorris13 <joetylermorris13@gmail.com>
+Date:   Thu Oct 26 12:36:00 2017 -0500
+
+    created JT bio page
+
+commit 1136cdd365ba02383950fbbd4f99998fe8680ae1
+Merge: 699ccbf 8dd9d07
+Author: sdtran <steventran@utexas.edu>
+Date:   Thu Oct 26 12:32:45 2017 -0500
+
+    Merge branch 'dev' of https://github.com/nguyentb95/cs329e-idb into dev
+
+commit 699ccbfb3c5b4c3ee74e24cf33e82acb5e613bbf
+Author: sdtran <steventran@utexas.edu>
+Date:   Thu Oct 26 12:32:40 2017 -0500
+
+    Update author Male boolean
+
+commit 8dd9d071274082507e7d9bb61024630925f3ea79
+Merge: d91caef a178481
+Author: nmakkapati <nmakkapati@gmail.com>
+Date:   Thu Oct 26 12:29:07 2017 -0500
+
+    Merge remote-tracking branch 'origin/dev' into dev
+
+commit d91caef72edf5ecefa7fd7b06f040cd2fc69b299
+Author: nmakkapati <nmakkapati@gmail.com>
+Date:   Thu Oct 26 12:28:59 2017 -0500
+
+    Added a jumbotron
+
+commit a178481ca15f4e4fdf131a7d16a3f40ca34aa6d3
+Author: sdtran <steventran@utexas.edu>
+Date:   Thu Oct 26 12:23:35 2017 -0500
+
+    Steven about page
+
+commit 04926a95078d8036af4369240a7987b7aa21025d
+Author: sdtran <steventran@utexas.edu>
+Date:   Thu Oct 26 12:03:11 2017 -0500
+
+    Table borders and cellpadding
+
+commit 64a32505a008bf1ccb1b83e803c962f6ce3f41a8
+Merge: d099f82 cfd8be3
+Author: nmakkapati <nmakkapati@gmail.com>
+Date:   Thu Oct 26 11:57:30 2017 -0500
+
+    Merge remote-tracking branch 'origin/dev' into dev
+
+commit d099f82f31a0284353d77e0781f5d880e2aa5eff
+Author: nmakkapati <nmakkapati@gmail.com>
+Date:   Thu Oct 26 11:57:19 2017 -0500
+
+    Added narenmakkapati.html
+
+commit cfd8be3a72f442960c59187b905deac811ef5073
+Merge: 02d1f85 7011d86
+Author: sdtran <steventran@utexas.edu>
+Date:   Thu Oct 26 11:36:24 2017 -0500
+
+    Merge branch 'dev' of https://github.com/nguyentb95/cs329e-idb into dev
+
+commit 02d1f85a090169ce3688b9d13f2d170826dc89db
+Author: sdtran <steventran@utexas.edu>
+Date:   Thu Oct 26 11:36:17 2017 -0500
+
+    Added margin for model pages
+
+commit 7011d86e34f487cb8ffcb95892ed382fad889b83
+Merge: 1f1c7b0 984930c
+Author: JTMorris13 <joetylermorris13@gmail.com>
+Date:   Thu Oct 26 11:36:17 2017 -0500
+
+    Merge remote-tracking branch 'origin/dev' into dev
+
+commit 1f1c7b09a4926318d2700d42481146d317eae348
+Author: JTMorris13 <joetylermorris13@gmail.com>
+Date:   Thu Oct 26 11:36:08 2017 -0500
+
+    added image to index page
+
+commit 984930c13c9d4c4f136c459aa4320d6b610a9c6d
+Author: sdtran <steventran@utexas.edu>
+Date:   Thu Oct 26 11:34:56 2017 -0500
+
+    update author table
+
+commit a534297d0e3e34e10d417c9fc768697f9d17df01
+Author: sdtran <steventran@utexas.edu>
+Date:   Thu Oct 26 11:30:01 2017 -0500
+
+    Added about page
+
+commit 78dda1b4f582e3cc8c0224e349293fd8ee18d497
+Merge: f08932c bb0eed7
+Author: nmakkapati <nmakkapati@gmail.com>
+Date:   Thu Oct 26 11:13:33 2017 -0500
+
+    Merge remote-tracking branch 'origin/dev' into dev
+
+commit f08932c54f0315e68af1b2fe334cb5784d5f53a2
+Author: nmakkapati <nmakkapati@gmail.com>
+Date:   Thu Oct 26 11:13:24 2017 -0500
+
+    Fixed index width
+
+commit bb0eed7c4fc3b7be3713e02548756b6c4e121bab
+Author: sdtran <steventran@utexas.edu>
+Date:   Thu Oct 26 11:08:05 2017 -0500
+
+    Added nav bar to book and publisher model pages
+
+commit dcf23233f26c5cd65dece2f4d16a1a5401c10d1d
+Author: sdtran <steventran@utexas.edu>
+Date:   Thu Oct 26 11:05:41 2017 -0500
+
+    Updated index to have models
+
+commit ad63aa188d40d1cffde8ca2a7438d1fd7b7b41d7
+Author: sdtran <steventran@utexas.edu>
+Date:   Thu Oct 26 10:57:10 2017 -0500
+
+    Added publishers with links
+
+commit c3b127c4902c01d52e7930cf246f4dbb03d9e319
+Author: sdtran <steventran@utexas.edu>
+Date:   Thu Oct 26 10:38:20 2017 -0500
+
+    Added publisher fields to each book
+
+commit 70bbf8ea5b73e05c8d8d15ca167833a45f3a591e
+Merge: 3c38518 055e70c
+Author: sdtran <steventran@utexas.edu>
+Date:   Thu Oct 26 10:31:30 2017 -0500
+
+    Merge branch 'dev' of https://github.com/nguyentb95/cs329e-idb into dev
+
+commit 055e70c41a21b9de064f7c19ac0cb0afe6fa6a49
+Author: nmakkapati <nmakkapati@gmail.com>
+Date:   Thu Oct 26 10:30:14 2017 -0500
+
+    Added a home nav bar on the top
+
+commit 3c3851858b70bcedf87c484e422f6d90895fc628
+Author: sdtran <steventran@utexas.edu>
+Date:   Thu Oct 26 10:25:49 2017 -0500
+
+    Book model html with links
+
+commit ef3cc96d7637799410f23116d89af43bd4344d3a
+Author: sdtran <steventran@utexas.edu>
+Date:   Thu Oct 26 10:11:16 2017 -0500
+
+    Models.py using Flask and SQLAlchemy (in progress)
+
+commit c1bfefd95ec7066cdcbbdb65c7612a51ba43707f
+Author: Naren Makkapati <nmakkapati@users.noreply.github.com>
+Date:   Thu Oct 26 10:06:23 2017 -0500
+
+    Rename SiddharthaMukherjee.html to siddharthamukherjee.html
+
+commit 1cbdc0ec7c8c2f1a4548cc560a279982699949ab
+Author: Naren Makkapati <nmakkapati@users.noreply.github.com>
+Date:   Thu Oct 26 10:06:07 2017 -0500
+
+    Rename SimonSchuster.html to simonschuster.html
+
+commit d24a95686c2c3842c531b21d8541704ea0225762
+Author: Naren Makkapati <nmakkapati@users.noreply.github.com>
+Date:   Thu Oct 26 10:05:16 2017 -0500
+
+    Rename SimonSchuster.html to simonschuster.html
+
+commit f367c176763f3fccfc7b327cd1d7efeb3f851675
+Author: Naren Makkapati <nmakkapati@users.noreply.github.com>
+Date:   Thu Oct 26 10:04:59 2017 -0500
+
+    Rename SiddharthaMukherjee.html to siddharthamukherjee.html
+
+commit 4a44dbba33b60613e23cf67499161dcf8d83668a
+Author: nmakkapati <nmakkapati@gmail.com>
+Date:   Thu Oct 26 09:52:04 2017 -0500
+
+    Removed extra JS file
+
+commit 07fc38ac3a96465e53bbeb9d732d51cb48171dcd
+Merge: 56c4b40 5427953
+Author: Naren Makkapati <nmakkapati@users.noreply.github.com>
+Date:   Thu Oct 26 09:48:20 2017 -0500
+
+    Merge pull request #41 from nguyentb95/dev
+    
+    Dev
+
+commit 5427953e3e22f3b817a7e357c992d4f37486fce1
+Author: nmakkapati <nmakkapati@gmail.com>
+Date:   Thu Oct 26 09:45:29 2017 -0500
+
+    JS file for sorting
+
+commit 667fe7265ff532f4850b41d0e3d58db791f2cbfb
+Merge: b6e7124 caf43f1
+Author: nmakkapati <nmakkapati@gmail.com>
+Date:   Thu Oct 26 09:44:36 2017 -0500
+
+    Merge remote-tracking branch 'origin/dev' into dev
+
+commit b6e712445ab72f9b1bea152ea6c0efc5f90aeeea
+Author: nmakkapati <nmakkapati@gmail.com>
+Date:   Thu Oct 26 09:44:19 2017 -0500
+
+    Added the author model page and implemented a sortable JS script for the table
+
+commit caf43f1af148174b99ecd266bedee21b107a0f74
+Author: JTMorris13 <joetylermorris13@gmail.com>
+Date:   Wed Oct 25 17:47:22 2017 -0500
+
+    Edited HarperCollins page
+
+commit f71caa489d3b0a65e82b01f67a6a49dfd13e0b07
+Author: yyuto6012 <(yyabu0618@gmail.com)>
+Date:   Wed Oct 25 17:28:16 2017 -0500
+
+    Modified index and each page fonts
+
+commit fd9370c69fd32e8e621c873d27df4511918afd82
+Author: JTMorris13 <joetylermorris13@gmail.com>
+Date:   Wed Oct 25 16:46:10 2017 -0500
+
+    Edited Harper Lee page
+
+commit 520b52db6a68dd66b5a89181e5c301089789385d
+Merge: 15ba80f 3e84190
+Author: JTMorris13 <joetylermorris13@gmail.com>
+Date:   Wed Oct 25 16:34:18 2017 -0500
+
+    Merge remote-tracking branch 'origin/dev' into dev
+
+commit 15ba80f1a2fb0d34d428fa1e9075edb6c0b1a3d1
+Author: JTMorris13 <joetylermorris13@gmail.com>
+Date:   Wed Oct 25 16:33:57 2017 -0500
+
+    Edited TKAMB page
+
+commit 3e84190fe7ca85efc6ec27695f1f2cc56f60164c
+Author: yyuto6012 <(yyabu0618@gmail.com)>
+Date:   Wed Oct 25 15:52:21 2017 -0500
+
+    applied css to three pages
+
+commit 201000a0abc86f8a62aa4f799dbedf046735185c
+Author: nmakkapati <nmakkapati@gmail.com>
+Date:   Wed Oct 25 15:38:09 2017 -0500
+
+    Got rid of the 1-800-FUCK-OFF
+
+commit b53a20bf9b238edbfb673015279fe3b563166972
+Author: nmakkapati <nmakkapati@gmail.com>
+Date:   Wed Oct 25 15:14:36 2017 -0500
+
+    Updated css in html
+
+commit 24208a24869fa7e50a6356612f65e9536aa0272f
+Author: nmakkapati <nmakkapati@gmail.com>
+Date:   Tue Oct 24 22:56:35 2017 -0500
+
+    create book/TheEmperorofAllMaladies
+
+commit a02f91816dfcfcbfeb3867deae4ac8585bd795da
+Author: Naren Makkapati <nmakkapati@users.noreply.github.com>
+Date:   Tue Oct 24 21:35:48 2017 -0500
+
+    Delete cs329e-idb.iml
+
+commit 1df2dbbf159a19050d4c4e576838788876200599
+Author: Naren Makkapati <nmakkapati@users.noreply.github.com>
+Date:   Tue Oct 24 21:35:38 2017 -0500
+
+    Delete misc.xml
+
+commit 99b4ccf197dd1c379a60bda52b6e70563b19d17a
+Author: Naren Makkapati <nmakkapati@users.noreply.github.com>
+Date:   Tue Oct 24 21:35:24 2017 -0500
+
+    Delete modules.xml
+
+commit e880252dd351fbf9c65d342e864505ec2d4cddec
+Author: Naren Makkapati <nmakkapati@users.noreply.github.com>
+Date:   Tue Oct 24 21:35:11 2017 -0500
+
+    Delete vcs.xml
+
+commit 421bdaee3e8a04bf7a378cf2b609aeb85af20d46
+Author: Naren Makkapati <nmakkapati@users.noreply.github.com>
+Date:   Tue Oct 24 21:34:56 2017 -0500
+
+    Delete workspace.xml
+
+commit 9c164fa82ee27c63b62f7a9015303e50b79e6b0f
+Merge: e579f88 5f8d6c1
+Author: yyuto6012 <(yyabu0618@gmail.com)>
+Date:   Tue Oct 24 19:11:55 2017 -0500
+
+    Merge remote-tracking branch 'origin/dev' into dev
+    
+    # Conflicts:
+    #       templates/HarperCollins.html
+    #       templates/HarperLee.html
+    #       templates/TheEmperorofAllMaladies.html
+    #       templates/ToKillAMockingbird.html
+    #       templates/bryansanderson.html
+    #       templates/palgravemacmillan.html
+    #       templates/thewellofascension.html
+
+commit e579f884582a28dcdd3fec1aaf1b13a6a1904851
+Author: yyuto6012 <(yyabu0618@gmail.com)>
+Date:   Tue Oct 24 19:07:18 2017 -0500
+
+    conflict merges
+
+commit 44c4811891d7b8af8f52a017da762768d977d44a
+Merge: f336ed4 56c4b40
+Author: yyuto6012 <(yyabu0618@gmail.com)>
+Date:   Tue Oct 24 18:57:05 2017 -0500
+
+    Merge branch 'master' into dev
+    
+    # Conflicts:
+    #       templates/HarperCollins.html
+    #       templates/HarperLee.html
+    #       templates/TheEmperorofAllMaladies.html
+    #       templates/ToKillAMockingbird.html
+    #       templates/bryansanderson.html
+    #       templates/palgravemacmillan.html
+    #       templates/thewellofascension.html
+
+commit f336ed44fc173a11a100131f1ee72de1d11c911f
+Author: yyuto6012 <(yyabu0618@gmail.com)>
+Date:   Tue Oct 24 18:56:36 2017 -0500
+
+    merge
+
+commit 47ba3326fb09f643c01b15d057758aba8795dd73
+Author: yyuto6012 <(yyabu0618@gmail.com)>
+Date:   Tue Oct 24 17:58:01 2017 -0500
+
+    add The Emperor of All Maladies
+
+commit 5f8d6c14c58b792b23895762f64f16421e773106
+Merge: 5c8b1e4 f1e92d0
+Author: nmakkapati <nmakkapati@gmail.com>
+Date:   Tue Oct 24 17:22:47 2017 -0500
+
+    Merge remote-tracking branch 'origin/dev' into dev
+
+commit 5c8b1e48be6ae635f13581db91c79ddd2df9b37f
+Author: nmakkapati <nmakkapati@gmail.com>
+Date:   Tue Oct 24 17:22:32 2017 -0500
+
+    Added css styling to my pages, added a local version of bootstrap
+
+commit 56c4b400bc6d6ea1f7d18b09585a8a1e58e3e141
+Merge: 4b3b562 f1e92d0
+Author: Naren Makkapati <nmakkapati@users.noreply.github.com>
+Date:   Tue Oct 24 16:19:24 2017 -0500
+
+    Merge pull request #38 from nguyentb95/dev
+    
+    Dev
+
+commit f1e92d03e02ca04ef48f6c9ee4449a7c81c7d343
+Author: Naren Makkapati <nmakkapati@users.noreply.github.com>
+Date:   Tue Oct 24 16:17:31 2017 -0500
+
+    Rename HarperCollins.html to harpercollins.html
+
+commit 1cc16d61a939f02dcfd756107562c6df6841c11c
+Author: Naren Makkapati <nmakkapati@users.noreply.github.com>
+Date:   Tue Oct 24 16:16:20 2017 -0500
+
+    Rename HarperLee.html to harperlee.html
+
+commit 5b498d3ae71cd1e88c9bf9bcfde33b8c8493c292
+Author: Naren Makkapati <nmakkapati@users.noreply.github.com>
+Date:   Tue Oct 24 16:16:01 2017 -0500
+
+    Rename PalgraveMacmillan.html to palgravemacmillan.html
+
+commit 809206674f195367eaad9e0a3b307aa60a5063de
+Author: Naren Makkapati <nmakkapati@users.noreply.github.com>
+Date:   Tue Oct 24 16:15:31 2017 -0500
+
+    Rename TheEmperorofAllMaladies.html to theemperorofallmaladies.html
+
+commit ff828506b8144b97ef7cd7472b3073fdf909ddc0
+Author: Naren Makkapati <nmakkapati@users.noreply.github.com>
+Date:   Tue Oct 24 16:15:01 2017 -0500
+
+    Rename TheWellOfAscension.html to thewellofascension.html
+
+commit bf6410587c8f280491e7c41671efec3d88565813
+Author: Naren Makkapati <nmakkapati@users.noreply.github.com>
+Date:   Tue Oct 24 16:14:27 2017 -0500
+
+    Rename ToKillAMockingbird.html to tokillamockingbird.html
+
+commit 0841317f4a41f9d89fb574d2a18b9b2a73b02277
+Author: Naren Makkapati <nmakkapati@users.noreply.github.com>
+Date:   Tue Oct 24 16:14:03 2017 -0500
+
+    Rename BryanSanderson.html to bryansanderson.html
+
+commit 0110af35a17cc9818c50c95bcb77916d62b72d1a
+Merge: 50c549f 4b3b562
+Author: Naren Makkapati <nmakkapati@users.noreply.github.com>
+Date:   Tue Oct 24 15:57:37 2017 -0500
+
+    Merge pull request #37 from nguyentb95/master
+    
+    Catch up dev with master. I think?
+
+commit 4b3b562f7f4168c4eedb97b8ecc20079eb09ebd5
+Merge: 7709ec5 50c549f
+Author: Naren Makkapati <nmakkapati@users.noreply.github.com>
+Date:   Tue Oct 24 15:53:51 2017 -0500
+
+    Merge pull request #36 from nguyentb95/dev
+    
+    Dev - Fixed travis issues
+
+commit 50c549f1fd38ab4ae0422abf5378820a5a161e01
+Author: nmakkapati <nmakkapati@gmail.com>
+Date:   Tue Oct 24 15:50:50 2017 -0500
+
+    run pytest directly on test file
+
+commit 27a7534b8c4bb21a1fae747e70246838328789be
+Author: nmakkapati <nmakkapati@gmail.com>
+Date:   Tue Oct 24 15:47:44 2017 -0500
+
+    typo
+
+commit 914f157ae90e052b04b65a9bf64ebcea54bde97b
+Author: nmakkapati <nmakkapati@gmail.com>
+Date:   Tue Oct 24 15:46:16 2017 -0500
+
+    Using pytest to do unittest
+
+commit a22f92af562a6f48f163d59820d97868f05ae872
+Author: nmakkapati <nmakkapati@gmail.com>
+Date:   Tue Oct 24 15:42:59 2017 -0500
+
+    Switched from pytest to unittest, this might work better?
+
+commit 3dea7c0e23f21aaafca55dd6bbe82b750ca37f50
+Author: nmakkapati <nmakkapati@gmail.com>
+Date:   Tue Oct 24 15:30:50 2017 -0500
+
+    Added pytest to work on Travis. Maybe?
+
+commit 7709ec5c5b272462d721cbc8bf0cffa780036aa2
+Merge: 3144469 a4b3b3b
+Author: Naren Makkapati <nmakkapati@users.noreply.github.com>
+Date:   Tue Oct 24 14:44:42 2017 -0500
+
+    Merge pull request #35 from nguyentb95/dev
+    
+    Added bootstrap minimal css to all of the pages, as well as a favicon
+
+commit a4b3b3b27a1bb322f55a573ff923749ef545379b
+Author: nmakkapati <nmakkapati@gmail.com>
+Date:   Tue Oct 24 14:33:47 2017 -0500
+
+    Added bootstrap minimal css to all of the pages, as well as a favicon
+
+commit 3144469417cbef2ad9062c6aaaa6845e05d8f3a3
+Merge: 16af0e1 f1ad547
+Author: nguyentb95 <tolanbien2@gmail.com>
+Date:   Tue Oct 24 10:37:34 2017 -0500
+
+    Merge pull request #34 from nguyentb95/dev
+    
+    Dev
+
+commit f1ad5478a4068687f016b5c89137e77b87859880
+Author: nmakkapati <nmakkapati@gmail.com>
+Date:   Tue Oct 24 10:36:27 2017 -0500
+
+    Added title to index
+
+commit 1a8406404b31d7ef1312c68b80f1a577debeda95
+Author: nmakkapati <nmakkapati@gmail.com>
+Date:   Tue Oct 24 10:31:23 2017 -0500
+
+    Added links
+
+commit e740d8a4cf1e3412c2edd1c93b7eaafc8c99d503
+Author: JTMorris13 <joetylermorris13@gmail.com>
+Date:   Tue Oct 24 10:27:28 2017 -0500
+
+    Added HarperCollins
+
+commit 51139df7e4687b7d7f1efd58e648130f92debfd9
+Author: JTMorris13 <joetylermorris13@gmail.com>
+Date:   Tue Oct 24 10:19:49 2017 -0500
+
+    Added Harper Lee
+
+commit 9dc5f9ae5c66379a0706adc942e50f31e0b35cff
+Author: nmakkapati <nmakkapati@gmail.com>
+Date:   Tue Oct 24 10:16:43 2017 -0500
+
+    Added Palgrave Macmillan as a publisher
+
+commit 42108d7c8f971a570947a00a3ab13d72bce1c093
+Author: nmakkapati <nmakkapati@gmail.com>
+Date:   Tue Oct 24 10:10:04 2017 -0500
+
+    The website now uses a single method call to get each page, not a separate method for each page.
+
+commit 16af0e1bccc819cb12b6ec298e69184c6dd2599b
+Merge: 2588a59 1ca76d0
+Author: nguyentb95 <tolanbien2@gmail.com>
+Date:   Sun Oct 22 14:51:42 2017 -0500
+
+    Merge pull request #28 from nguyentb95/dev
+    
+    Dev
+
+commit 1ca76d023e68c21d551bc3f06a477fa01f241473
+Author: AZ-SU\az-su <tolanbien2@gmail.com>
+Date:   Sun Oct 22 14:50:35 2017 -0500
+
+    links added and working
+
+commit 70c6aebcd28c0f4301686a3a8477da0824660244
+Author: AZ-SU\az-su <tolanbien2@gmail.com>
+Date:   Sun Oct 22 14:29:09 2017 -0500
+
+    how do i test this
+
+commit 65bf1f68da8c35d0a57f3a2c08906a1db9e6e4e8
+Author: AZ-SU\az-su <tolanbien2@gmail.com>
+Date:   Sun Oct 22 14:23:43 2017 -0500
+
+    adding pytest to yml 2
+
+commit 21a1c8a8375eff56edd0474ca65dda10dade305d
+Author: AZ-SU\az-su <tolanbien2@gmail.com>
+Date:   Sun Oct 22 14:22:54 2017 -0500
+
+    adding pytest to yml
+
+commit b6ca3f7d2a051f439b0b56e48b447814a4b81d33
+Author: AZ-SU\az-su <tolanbien2@gmail.com>
+Date:   Sun Oct 22 14:12:10 2017 -0500
+
+    .travis.yml adding pytest
+
+commit 9b17568123c7e58f3033bf3c3e7de19965fe0e49
+Author: AZ-SU\az-su <tolanbien2@gmail.com>
+Date:   Sun Oct 22 14:09:00 2017 -0500
+
+    fix travis
+
+commit 0c647ed9a6c5fc758d12708ab80ea45939f90968
+Author: AZ-SU\az-su <tolanbien2@gmail.com>
+Date:   Sun Oct 22 14:05:33 2017 -0500
+
+    adding .travis.yml file
+
+commit b3da0bd6083c6e4e6151ca1e8fd14c990289127d
+Author: nmakkapati <nmakkapati@gmail.com>
+Date:   Fri Oct 20 17:55:27 2017 -0500
+
+    Updated app.py to work with any page name. Also added Bryan Sandersons page.
+
+commit 3f040ac596560a2d1f4a2fa3f8c03f03bc8c8717
+Author: nmakkapati <nmakkapati@gmail.com>
+Date:   Fri Oct 20 17:25:46 2017 -0500
+
+    Added Google ID to The WellOfAscension.html
+
+commit 75ab8bfa0a0e71bbdb40e9b8e33bc3c42ff09c40
+Author: nmakkapati <nmakkapati@gmail.com>
+Date:   Fri Oct 20 17:24:14 2017 -0500
+
+    BryanSanderson
+
+commit 6819d18f0434e562c062444e37240929561234c5
+Author: JTMorris13 <joetylermorris13@gmail.com>
+Date:   Fri Oct 20 17:18:21 2017 -0500
+
+    Added to Kill a Mockingbird
+
+commit 2588a59ff73a53e650bef5d9083b846608c756e3
+Merge: 0839c27 c63f544
+Author: nguyentb95 <tolanbien2@gmail.com>
+Date:   Fri Oct 20 16:57:12 2017 -0500
+
+    Merge pull request #26 from nguyentb95/dev
+    
+    Dev
+
+commit c63f5448a54ca5a40a69905b169a38c27f497690
+Author: AZ-SU\az-su <tolanbien2@gmail.com>
+Date:   Fri Oct 20 16:55:00 2017 -0500
+
+    requirements.txt
+
+commit 0503776d73509767bc6b0abb7b61e31ee78c0bf0
+Merge: 13e27e0 057bcfe
+Author: AZ-SU\az-su <tolanbien2@gmail.com>
+Date:   Fri Oct 20 16:54:12 2017 -0500
+
+    Merge branch 'dev' of https://github.com/nguyentb95/cs329e-idb into dev
+
+commit 057bcfef3cd41c10ca00896b95f82b6e0ff4bd48
+Merge: e61119c e4eea1c
+Author: yyuto6012 <(yyabu0618@gmail.com)>
+Date:   Fri Oct 20 16:47:54 2017 -0500
+
+    Merge remote-tracking branch 'origin/dev' into dev
+
+commit e61119c43ac3ab3d842c2fc5817123dcdfebc214
+Author: yyuto6012 <(yyabu0618@gmail.com)>
+Date:   Fri Oct 20 16:46:41 2017 -0500
+
+    create book/TheEmperorofAllMaladies
+
+commit 13e27e06f2a12370bcdc118c2993b6e5ac87e8b1
+Merge: 3feca07 e4eea1c
+Author: AZ-SU\az-su <tolanbien2@gmail.com>
+Date:   Fri Oct 20 16:46:31 2017 -0500
+
+    Merge branch 'dev' of https://github.com/nguyentb95/cs329e-idb into dev
+
+commit b83f70e2825c9757eea3be2eb743b72695d48f5f
+Author: yyuto6012 <(yyabu0618@gmail.com)>
+Date:   Fri Oct 20 16:45:39 2017 -0500
+
+    fix the error
+
+commit e4eea1ce210084c2c19aa47bd08eba4413f4cb38
+Author: nmakkapati <nmakkapati@gmail.com>
+Date:   Fri Oct 20 16:41:02 2017 -0500
+
+    Added Google ID to The WellOfAscension.html
+
+commit aecb30552950a8df0623d025f18515fe91a634e9
+Author: nmakkapati <nmakkapati@gmail.com>
+Date:   Fri Oct 20 16:39:50 2017 -0500
+
+    Added book index Flask function with bookname variable
+
+commit 0839c2740174351b6bddc1d434741e6bf29bbc72
+Merge: cac3a88 51c09e2
+Author: nguyentb95 <tolanbien2@gmail.com>
+Date:   Fri Oct 20 16:32:42 2017 -0500
+
+    Merge pull request #24 from nguyentb95/dev
+    
+    trying to put a yaml file
+
+commit 3feca07b66058692cfa66ea9e340fc53e0912f68
+Merge: 51c09e2 cac3a88
+Author: AZ-SU\az-su <tolanbien2@gmail.com>
+Date:   Fri Oct 20 16:32:01 2017 -0500
+
+    Merge branch 'master' into dev
+
+commit 51c09e249896a101fd18acb787d1d731c9d22063
+Author: AZ-SU\az-su <tolanbien2@gmail.com>
+Date:   Fri Oct 20 16:31:45 2017 -0500
+
+    trying to put a yaml file
+
+commit cac3a88532bede8786203c95ca7807604d3ae8e4
+Merge: 492bf73 6011e9b
+Author: yyuto6012 <yyabu0618@gmail.com>
+Date:   Fri Oct 20 16:21:22 2017 -0500
+
+    Merge pull request #13 from nguyentb95/dev
+    
+    Dev
+
+commit 6011e9baaedbe419e7b588a78270b35d2fdcf7f2
+Author: nmakkapati <nmakkapati@gmail.com>
+Date:   Fri Oct 20 16:17:09 2017 -0500
+
+    Cutesy little index page, time to create other pages
+
+commit 783daacdb99d98e56e84da232ac6428bf142c07f
+Author: yyuto6012 <(yyabu0618@gmail.com)>
+Date:   Fri Oct 20 16:13:49 2017 -0500
+
+    fix the error
+
+commit f9799283085f20cbdaddd1e1371001c24456c448
+Author: nmakkapati <nmakkapati@gmail.com>
+Date:   Fri Oct 20 15:50:33 2017 -0500
+
+    Basic hello world index page, works locally for now
+
+commit 492bf7353745da7058bf83fff056b0de5516cecb
+Author: nguyentb95 <tolanbien2@gmail.com>
+Date:   Fri Oct 20 14:49:23 2017 -0500
+
+    Added CNAME file for custom domain (digitalbinding.me)
+
+commit be454533440f5363b9c2d225d3fdd4871d1ab696
+Author: nguyentb95 <tolanbien2@gmail.com>
+Date:   Fri Oct 20 14:49:22 2017 -0500
+
+    Initial commit
