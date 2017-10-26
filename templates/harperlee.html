@@ -4,20 +4,24 @@
     <meta charset="UTF-8">
     <title>Harper Lee</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel=stylesheet type=text/css href="{{ url_for('static', filename='bootstrap.min.css') }}">
     <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
 </head>
 <body>
     <div class="container">
-    <h1>Harper Lee</h1>
-    <h2>Author</h2>
-    <h3>Author of:</h3>
-    <p>To Kill a Mockingbird</p>
-    <p></p>
-    <h3>Published by:</h3>
-    <p>HarperCollins</p>
+     <div class="row">
+            <div class="col-sm-4">
+                <h1>Harper Lee</h1>
+                <h2>Author</h2>
+                <h3>Author of:</h3>
+                <a href={{ url_for('page',pagename='tokillamockingbird') }}><p>To Kill a Mockingbird</p></a><br/>
+                <p></p>
+                <h3>Published by:</h3>
+                <a href={{ url_for('page',pagename='harpercollins') }}><p>HarperCollins</p></a><br/>
+            </div>
+            <div class="col-sm-8">
+                <img src="http://upload.wikimedia.org/wikipedia/commons/5/5f/HarperLee_2007Nov05.jpg" class="img-thumbnail" alt="Harper Lee">
+            </div>
     </div>
-
-
 </body>
 </html>

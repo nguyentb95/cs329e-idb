@@ -3,14 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel=stylesheet type=text/css href="{{ url_for('static', filename='bootstrap.min.css') }}">
     <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
     <title>Digital Binding</title>
 </head>
 <body>
     <div class="container">
     <h1>Digital Binding, LLC</h1>
-    <h2>If you need to contact us, call us at 1-800-FUCK-OFF</h2>
     <h3>Books</h3>
     <a href={{ url_for('page',pagename='thewellofascension') }}><p>The Well of Ascension</p></a><br/>
     <a href={{ url_for('page',pagename='theemperorofallmaladies') }}><p>The Emperor of All Maladies</p></a><br/>
@@ -18,10 +17,12 @@
     <h3>Authors</h3>
 	<a href={{ url_for('page',pagename='bryansanderson') }}><p>Bryan Sanderson</p></a><br/>
     <a href={{ url_for('page',pagename='harperlee') }}><p>Harper Lee</p></a><br/>
+    <a href={{ url_for('page',pagename='siddharthamukherjee') }}><p>Siddhartha Mukherjee</p></a><br/>
 
     <h3>Publishers</h3>
 	<a href={{ url_for('page',pagename='palgravemacmillan') }}><p>Palgrave Macmillan</p></a><br/>
 	<a href={{ url_for('page',pagename='harpercollins') }}><p>HarperCollins</p></a><br/>
+    <a href={{ url_for('page',pagename='simonschuster') }}><p>Simon Schuster</p></a><br/>
 
         <blockquote>
         <p>The best internet concept I've seen in centuries!</p>

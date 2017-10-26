@@ -9,13 +9,20 @@
 </head>
 <body>
     <div class="container">
+    <div class="row">
+    <div class="col-sm-4">
     <h1>HarperCollins</h1>
     <h2>Publishing House</h2>
     <h3>Published:</h3>
-    <p>To Kill a Mockingbird</p>
+    <a href={{ url_for('page',pagename='tokillamockingbird') }}><p>To Kill a Mockingbird</p></a><br/>
     <p></p>
     <h3>Written by:</h3>
-    <p>Harper Lee</p>
+    <a href={{ url_for('page',pagename='harperlee') }}><p>Harper Lee</p></a><br/>
+    </div>
+    <div class="col-sm-8">
+    <img src="http://upload.wikimedia.org/wikipedia/en/thumb/0/00/Harpercollins-logo.svg/250px-Harpercollins-logo.svg.png" class="img-thumbnail" alt="HarperCollins">
+    </div>
+    </div>
     </div>
 
 

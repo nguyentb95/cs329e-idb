@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel=stylesheet type=text/css href="{{ url_for('static', filename='bootstrap.min.css') }}">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+    <script src="{{ url_for('static', filename='sorttable.js') }}"></script>
+    <title>Digital Binding</title>
+
+</head>
+<body>
+
+    <h1>Available Authors</h1>
+    <table class="sortable">
+        <tr>
+            <th>Name</th>
+            <th>Birth Date</th>
+            <th>Death Date</th>
+            <th>Country</th>
+            <th>Gender</th>
+        </tr>
+        <tr>
+            <td><a href={{ url_for('page',pagename='bryansanderson') }}><p>Bryan Sanderson</p></a></td>
+            <td></td>
+            <td></td>
+            <td>USA</td>
+            <td>Male</td>
+        </tr>
+        <tr>
+            <td><a href={{ url_for('page',pagename='harperlee') }}><p>Harper Lee</p></a></td>
+            <td></td>
+            <td></td>
+            <td>USA</td>
+            <td>Female</td>
+        </tr>
+        <tr>
+            <td>Siddhartha Muckherjee</td>
+            <td></td>
+            <td></td>
+            <td>India</td>
+            <td>Male</td>
+        </tr>
+    </table>
+
+</body>
+</html>
