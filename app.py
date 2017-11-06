@@ -46,7 +46,7 @@ def index():
 
 @app.route('/<string:pagename>')
 def page(pagename):
-    return render_template(pagename.lower()+'.html')
+    return render_template(pagename.lower()+'.html', books=books, authors=authors, publishers=publishers)
 
 @app.route('/test/') #put this into index later
 def testbooks():

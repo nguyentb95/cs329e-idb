@@ -35,6 +35,21 @@
             <th>Country</th>
             <th>Gender</th>
         </tr>
+		
+		{%if authors ==[]%}
+				<p> Author Test Failed</p>
+			{%else%}
+				{%for j in authors%}
+				<tr>
+				<td><a href={{ url_for('genericauthor',aid = j.id) }}><p>{{j.author}}</p></a></td>
+				<td>NO DB</td>
+				<td></td>
+				<td>NO DB</td>
+				<td>NO DB</td>
+				</tr>
+				{%endfor%}
+			{%endif%}
+		
         <tr>
             <td><a href={{ url_for('page',pagename='bryansanderson') }}><p>Bryan Sanderson</p></a></td>
             <td>19/12/1975</td>

@@ -35,6 +35,20 @@
             <th>YearEstablished</th>
             <th>HQCity</th>
         </tr>
+		{%if publishers ==[]%}
+				<p> Publisher Test Failed</p>
+			{%else%}
+				{%for h in publishers%}
+		<tr>
+			<td><a href={{ url_for('genericpublisher',pid = h.id) }}><p>{{h.publisher}}</p></a></td>
+			<td>{{h.publisher}}</td>
+			<td>h.country</td>
+			<td>h.year</td>
+			<td>h.city</td>
+        </tr>
+				
+				{%endfor%}
+			{%endif%}
         <tr>
             <td><a href={{ url_for('page',pagename='simonschuster') }}><p>Simon Schuster</p></a></td>
             <td>CBS Corporation</td>
