@@ -41,7 +41,6 @@ class Publisher(db.Model):
 	ParentCountry = db.Column(db.String(100))
 	Location = db.Column(db.String(100))
 	YearFounded = db.Column(db.Integer)
-	BookCount = db.Column(db.Integer)
 	Image = db.Column(db.String(1000))
 	Website = db.Column(db.String(250))
 	Description = db.Column(db.String(1000))
