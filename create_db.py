@@ -26,6 +26,15 @@ DBSession = sessionmaker(bind=engine)
 # create an instance of DBSession
 session = DBSession()
 
+def addBook(newBook):
+    book = session.query(Book).filter(Book.isbn == newBook.isbn).all()
+
+    if len(book) == 0:
+        session.add(newBook)
+    else:
+        return False
+
+
 def addAuthor(authorName, authorBirthDate, authorEducation, authorNationality, authorAlmaMater, authorWiki, authorImage, authorDesc, newBook ):
     auth= session.query(Author).filter(Author.name == authorName).all()
 
@@ -79,38 +88,39 @@ def load_json(filename):
 
 def create_books():
     book = load_json('books.json')
-
-    for oneBook in book['Books']:
+    for oneBook in book:
         #Extract book data
-        title = oneBook['title']
-        isbn = oneBook['isbn']
-        googleid = oneBook['google_id']
-        datePub = oneBook['publication_date']
-        description = oneBook['description']
-        image = oneBook['image_url']
+        title = oneBook.get('title')
+        isbn = oneBook.get('isbn')
+        googleid = oneBook.get('google_id')
+        if isbn == None:
+            isbn = googleid
+        datePub = oneBook.get('publication_date')
+        description = oneBook.get('description')
+        image = oneBook.get('image_url')
 
         #Extract author data
-        authorDict = oneBook['authors']
-        authorName = authorDict['name']
-        authorBirthDate = authorDict['born']
-        authorEducation = authorDict['education']
-        authorNationality = authorDict['nationality']
-        authorAlmaMater = authorDict['alma_mater']
-        authorWiki = authorDict['wikipedia_url']
-        authorImage = authorDict['image_url']
-        authorDesc = authorDict['description']
+        authorDict = oneBook['authors'][0]
+        authorName = authorDict.get('name')
+        authorBirthDate = authorDict.get('born')
+        authorEducation = authorDict.get('education')
+        authorNationality = authorDict.get('nationality')
+        authorAlmaMater = authorDict.get('alma_mater')
+        authorWiki = authorDict.get('wikipedia_url')
+        authorImage = authorDict.get('image_url')
+        authorDesc = authorDict.get('description')
 
         #Extract publisher data
-        publisherDict = oneBook['publishers']
-        publisherName = publisherDict['name']
-        publisherParCom = publisherDict['parent company']
-        publisherOwner = publisherDict['owner']
-        publisherLoc = publisherDict['location']
-        publisherYear = publisherDict['founded']
-        publisherImage = publisherDict['image_url']
-        publisherWebpage = publisherDict['website']
-        publisherWiki = publisherDict['wikipedia_url']
-        publisherDesc = publisherDict['description']
+        publisherDict = oneBook['publishers'][0]
+        publisherName = publisherDict.get('name')
+        publisherParCom = publisherDict.get('parent company')
+        publisherOwner = publisherDict.get('owner')
+        publisherLoc = publisherDict.get('location')
+        publisherYear = publisherDict.get('founded')
+        publisherImage = publisherDict.get('image_url')
+        publisherWebpage = publisherDict.get('website')
+        publisherWiki = publisherDict.get('wikipedia_url')
+        publisherDesc = publisherDict.get('description')
 
         newBook = Book(title=title,
                        isbn=isbn,
@@ -120,7 +130,9 @@ def create_books():
                        image=image
                        )
 
-        session.add(newBook)
+        if not addBook(newBook):
+            session.commit()
+            continue
 
 
         author = addAuthor(authorName,
