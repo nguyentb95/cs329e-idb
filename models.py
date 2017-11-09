@@ -5,7 +5,7 @@ This file defines the models for a book
 import sys
 import os
 # for writing mapper code
-from sqlalchemy import Column, ForeignKey, Integer, String, Table
+from sqlalchemy import Column, ForeignKey, Integer, String, Table, Date
 
 # for configuration and class code
 from sqlalchemy.ext.declarative import declarative_base
@@ -33,13 +33,12 @@ publisher_author_table = Table('publisherAuthorRelational', Base.metadata,
 # Book table
 class Book(Base):
     __tablename__ = "book"
-    ISBN = Column(Integer, primary_key=True)
-    Title = Column(String(250))
-    Google_id = Column(String(100))
-    Pages = Column(Integer)
-    YearPublished = Column(Integer)
-    Description = Column(String(1000))
-    Image = Column(String(1000))
+    isbn = Column(Integer, primary_key=True)
+    title = Column(String(250))
+    google_id = Column(String(100))
+    datePublished = Column(Date)
+    description = Column(String(1000))
+    image = Column(String(1000))
 
     author = Column(String(250), ForeignKey('author.Name'))
     publisher = Column(String(250), ForeignKey('publisher.Name'))
@@ -48,13 +47,14 @@ class Book(Base):
 # Author table
 class Author(Base):
     __tablename__ = "author"
-    Name = Column(String(250), primary_key=True)
-    BirthDate = Column(DateTime)
-    Education = Column(String(80))
-    Nationality = Column(String(80))
-    Alma_mater = Column(String(80))
-    Wikipedia = Column(String(1000))
-    Image = Column(String(1000))
+    name = Column(String(250), primary_key=True)
+    birthDate = Column(Date)
+    education = Column(String(80))
+    nationality = Column(String(80))
+    alma_mater = Column(String(80))
+    wikipedia = Column(String(1000))
+    image = Column(String(1000))
+    description = Column(String(1000))
 
     books = relationship("Book", backref='author')
     publishers = relationship("Publisher",
@@ -66,14 +66,15 @@ class Author(Base):
 # Publisher table
 class Publisher(Base):
     __tablename__ = "publisher"
-    Name = Column(String(250), primary_key=True)
-    ParentCompany = Column(String(250))
-    ParentCountry = Column(String(100))
-    Location = Column(String(100))
-    YearFounded = Column(Integer)
-    Image = Column(String(1000))
-    Website = Column(String(250))
-    Description = Column(String(1000))
+    name = Column(String(250), primary_key=True)
+    parentCompany = Column(String(250))
+    owner = Column(String(250))
+    location = Column(String(100))
+    yearFounded = Column(Integer)
+    image = Column(String(1000))
+    website = Column(String(250))
+    wikipedia = Column(String(250))
+    description = Column(String(1000))
 
     books = relationship("Book", backref='publisher')
 
