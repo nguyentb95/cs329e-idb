@@ -1,69 +1,85 @@
-from flask import Flask
-from flask_sqlalchemy import SQLAlchemy
+'''
+This file defines the models for a book
+'''
+# for manipulating diff parts of Python's run-time environment
+import sys
+import os
+# for writing mapper code
+from sqlalchemy import Column, ForeignKey, Integer, String, Table
 
-app = Flask(__name__)
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:////tmp/test.db'
-db = SQLAlchemy(app)
+# for configuration and class code
+from sqlalchemy.ext.declarative import declarative_base
 
-#Book table
-class Book(db.Model):\
-	id = db.Column(db.Integer, primary_key=True)
-	ISBN = db.Column(db.Integer)
-	Title = db.Column(db.String(250))
-	Google_id = db.Column(db.String(100))
-	Pages = db.Column(Integer)
-	YearPublished = db.Column(Integer)
-	Description = db.Column(db.String(1000))
-	Image = db.Column(db.String(1000))
+# for writing mapper code (create out foreign key relationship)
+from sqlalchemy.orm import relationship
 
-	def __repr__(self):
-		return '<Book %r>' % self.ISBN
+# for configuring code at the end of the file
+from sqlalchemy import create_engine
 
-#Author table
-class Author(db.Model):
-	id = db.Column(db.Integer, primary_key=True)
-	Name = db.Column(db.String(80))
-	BirthDate = db.Column(db.DateTime)
-	Education = db.Column(db.String(80))
-	Nationality = db.Column(db.String(80))
-	Alma_mater = db.Column(db.String(80))
-	Wikipedia = db.Coumn(String(1000))
-	Image = db.Column(db.String(1000))
+# for creating an instance of the declarative_base class
+# (the declarative base class will let SQLAlchemy know
+# that our classes are special SQLAlchemy classes that
+# corresponds to tables in our DB)
+Base = declarative_base()
 
-	def __repr__(self):
-		return '<Author %r>' % self.Name
+# Relational Tables
 
-#Publisher table
-class Publisher(db.Model):
-	id = db.Column(db.Integer, primary_key=True)
-	Name = db.Column(db.String(250))
-	ParentCompany = db.Column(db.String(250))
-	ParentCountry = db.Column(db.String(100))
-	Location = db.Column(db.String(100))
-	YearFounded = db.Column(db.Integer)
-	Image = db.Column(db.String(1000))
-	Website = db.Column(db.String(250))
-	Description = db.Column(db.String(1000))
+publisher_author_table = Table('publisherAuthorRelational', Base.metadata,
+                               Column('publisher_id', String(250), ForeignKey('publisher.Name')),
+                               Column('author_id', String(250), ForeignKey('author.Name'))
+                               )
 
-	def __repr__(self):
-		return '<Publisher %r>' % self.Name
 
-#Junction Tables
-class BookAuthor(db.Model):
-	id = db.Column(db.Integer, primary_key=True)
+# Book table
+class Book(Base):
+    __tablename__ = "book"
+    ISBN = Column(Integer, primary_key=True)
+    Title = Column(String(250))
+    Google_id = Column(String(100))
+    Pages = Column(Integer)
+    YearPublished = Column(Integer)
+    Description = Column(String(1000))
+    Image = Column(String(1000))
 
-	Author_id = db.Column(db.Integer, db.ForeignKey('author.id'))
-	author = db.relationship('Author', backref=db.backref('books', lazy = True))
+    author = Column(String(250), ForeignKey('author.Name'))
+    publisher = Column(String(250), ForeignKey('publisher.Name'))
 
-	Book_id = db.Column(db.Integer, db.ForeignKey('book.id'))
-	book = db.relationship('Book', backref=db.backref('books', lazy = True))
 
-class BookPublisher(db.Model):
-	id = db.Column(db.Integer, primary_key=True)
+# Author table
+class Author(Base):
+    __tablename__ = "author"
+    Name = Column(String(250), primary_key=True)
+    BirthDate = Column(DateTime)
+    Education = Column(String(80))
+    Nationality = Column(String(80))
+    Alma_mater = Column(String(80))
+    Wikipedia = Column(String(1000))
+    Image = Column(String(1000))
 
-	Publisher_id = db.Column(db.Integer, db.ForeignKey('publisher.id'))
-	publisher = db.relationship('Publisher', backref=db.backref('books', lazy = True))
+    books = relationship("Book", backref='author')
+    publishers = relationship("Publisher",
+                              secondary=publisher_author_table,
+                              backref='authors'
+                              )
 
-	Book_id = db.Column(db.Integer, db.ForeignKey('book.id'))
-	book = db.relationship('Book', backref=db.backref('books', lazy = True))
 
+# Publisher table
+class Publisher(Base):
+    __tablename__ = "publisher"
+    Name = Column(String(250), primary_key=True)
+    ParentCompany = Column(String(250))
+    ParentCountry = Column(String(100))
+    Location = Column(String(100))
+    YearFounded = Column(Integer)
+    Image = Column(String(1000))
+    Website = Column(String(250))
+    Description = Column(String(1000))
+
+    books = relationship("Book", backref='publisher')
+
+
+SQLALCHEMY_DATABASE_URI = os.getenv('SQLALCHEMY_DATABASE_URI', 'postgresql://postgres:localhost/digitalbinding')
+engine = create_engine(SQLALCHEMY_DATABASE_URI)
+
+Base.metadata.drop_all(engine)
+Base.metadata.create_all(engine)
