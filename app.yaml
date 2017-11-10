@@ -10,9 +10,9 @@ env_variables:
     # Replace user, password, database, and instance connection name with the values obtained
     # when configuring your Cloud SQL instance.
     SQLALCHEMY_DATABASE_URI: >-
-      postgresql+psycopg2://postgres:cs329e/digitalbindingdb?host=/cloudsql/digitalbindingdb:us-central1:digitalbindingdb
+      postgresql+psycopg2://postgres:cs329e/digitalbindingdb?host=/cloudsql/digitalbinding:us-central1:digitalbindingdb
 beta_settings:
-    cloud_sql_instances: newproject1-184022:us-central1:bookdb
+    cloud_sql_instances: digitalbinding:us-central1:digitalbindingdb
 
 handlers:
 - url: /.*
