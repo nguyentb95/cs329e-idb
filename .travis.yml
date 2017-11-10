@@ -16,6 +16,7 @@ install:
     - pip install pytest
     - pip install requests
     - pip install gunicorn
+    -pip  install sqlalchemy
 
 script:
     - python test.py
