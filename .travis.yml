@@ -10,13 +10,9 @@ before_install:
   #slack: cs329e-fall-2017:TWFzxBtOzsFmRkNjOTyP3bXA
 
 install:
-    - pip install flask
-    - pip install coverage
-    - pip install numpy
-    - pip install pytest
-    - pip install requests
-    - pip install gunicorn
-    - pip install sqlalchemy
+     - pip install --upgrade pip
+     - pip --version
+     - pip install -r requirements.txt
 
 script:
     - python test.py
