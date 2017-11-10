@@ -28,16 +28,16 @@ session = DBSession()
 
 def addBook(newBook):
     book = session.query(Book).filter(Book.isbn == newBook.isbn).all()
-
+    #print(newBook.title)
     if len(book) == 0:
         session.add(newBook)
     else:
-        return False
+        return True
 
 
 def addAuthor(authorName, authorBirthDate, authorEducation, authorNationality, authorAlmaMater, authorWiki, authorImage, authorDesc, newBook ):
     auth= session.query(Author).filter(Author.name == authorName).all()
-
+    #print(authorName)
     if len(auth) == 0:
         auth = Author(name=authorName,
                         birthDate=authorBirthDate,
@@ -130,8 +130,9 @@ def create_books():
                        image=image
                        )
 
-        if not addBook(newBook):
+        if addBook(newBook):
             session.commit()
+            print("Skip")
             continue
 
 

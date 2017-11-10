@@ -27,55 +27,25 @@
         <div class="row">
             <div class="col-sm-4">
     <h1>Available Books</h1>
-    <table class="sortable">
-        <tr>
-            <th>Title</th>
-            <th>ISBN</th>
-            <th>Author</th>
-            <th>Publisher</th>
-            <th>Pages</th>
-            <th>YearPublished</th>
-        </tr>
-		{%if books ==[]%}
-				<p>Book Test failed <p>
-			{%else%}
-				{%for i in books%}
-				<tr>
-					<td><a href={{ url_for('genericbook',bid = i.id) }}><p>{{i.book}}</p></a></td>
-					<td>i.isbn</td>
-					<td>ID of author of book</td>
-					<td><a href={{ url_for('page',pagename='simonschuster') }}><p>Simon Schuster</p></a></td>
-					<td>i.pages</td>
-					<td>i.year</td>
-				</tr>
-				
-				{%endfor%}
-			{%endif%}
-        <tr>
-            <td><a href={{ url_for('page',pagename='theemperorofallmaladies') }}><p>The Emperor of All Maladies</p></a></td>
-            <td>9781439107959</td>
-            <td><a href={{ url_for('page',pagename='siddharthamukherjee') }}><p>Siddhartha Mukherjee</p></a></td>
-            <td><a href={{ url_for('page',pagename='simonschuster') }}><p>Simon Schuster</p></a></td>
-            <td>571</td>
-            <td>2010</td>
-        </tr>
-        <tr>
-            <td><a href={{ url_for('page',pagename='thewellofascension') }}><p>The Well of Ascension</p></a></td>
-            <td>9780765316882</td>
-            <td><a href={{ url_for('page',pagename='bryansanderson') }}><p>Bryan Sanderson</p></a></td>
-            <td><a href={{ url_for('page',pagename='palgravemacmillan') }}><p>Palgrave MacMillan</p></a></td>
-            <td>590</td>
-            <td>2007</td>
-        </tr>
-        <tr>
-            <td><a href={{ url_for('page',pagename='tokillamockingbird') }}><p>To Kill a Mockingbird</p></a></td>
-            <td>9780061120084</td>
-            <td><a href={{ url_for('page',pagename='harperlee') }}><p>Harper Lee</p></a></td>
-            <td><a href={{ url_for('page',pagename='harpercollins') }}><p>HarperCollins</p></a></td>
-            <td>324</td>
-            <td>1960</td>
-        </tr>
-    </table>
+            <table>
+                <tr>
+                    <th>Title</th>
+                    <th>ISBN</th>
+                    <th>Author</th>
+                    <th>Publisher</th>
+                    <th>Date Published</th>
+                </tr>
+                {% for book in bookRows %}
+                    <tr>
+                    <td>{{ book.title }}</td>
+                    <td>{{ book.isbn }}</td>
+                    <td>{{ book.author }}</td>
+                    <td>{{ book.publisher }}</td>
+                    <td>{{ book.datePublished }}</td>
+                    </tr>
+                {% endfor %}
+            </table>
+
             </div>
         </div>
     </div>
