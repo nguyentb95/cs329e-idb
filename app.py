@@ -23,6 +23,16 @@ def book():
     return render_template('bookmodel.html',
                            bookRows = session.query(Book).all()
                            )
+@app.route('/authormodel')
+def author():
+    return render_template('authormodel.html',
+                           authorRows = session.query(Author).all()
+                           )
+@app.route('/publishermodel')
+def publisher():
+    return render_template('publishermodel.html',
+                           publisherRows = session.query(Publisher).all()
+                           )
 
 @app.route('/test/') #put this into index later
 def testbooks():
