@@ -27,36 +27,29 @@
         <div class="row">
             <div class="col-sm-4">
     <h1>Available Publishers</h1>
-    <table class="sortable">
-        <tr>
-            <th>Name</th>
-            <th>ParentCompany</th>
-            <th>ParentCountry</th>
-            <th>YearEstablished</th>
-            <th>HQCity</th>
-        </tr>
-        <tr>
-            <td><a href={{ url_for('page',pagename='simonschuster') }}><p>Simon Schuster</p></a></td>
-            <td>CBS Corporation</td>
-            <td>United States of America</td>
-            <td>1924</td>
-            <td>New York City</td>
-        </tr>
-        <tr>
-            <td><a href={{ url_for('page',pagename='palgravemacmillan') }}><p>Palgrave MacMillan</p></a></td>
-            <td>Springer Nature</td>
-            <td>United Kingdom</td>
-            <td>2000</td>
-            <td>London</td>
-        </tr>
-        <tr>
-            <td><a href={{ url_for('page',pagename='harpercollins') }}><p>HarperCollins</p></a></td>
-            <td>News Corp</td>
-            <td>United States</td>
-            <td>1989</td>
-            <td>New York City</td>
-        </tr>
-    </table>
+        <table class="sortable">
+                <tr>
+                    <th>Name</th>
+                    <th>Founded</th>
+                    <th>Parent Company</th>
+                    <th>Owner</th>
+                    <th>Books</th>
+                </tr>
+                {% for publisher in publisherRows %}
+                    <tr>
+                    <td>{{ publisher.name }}</td>
+                    <td>{{ publisher.yearFounded }}</td>
+                    <td>{{ publisher.parentCompany }}</td>
+                    <td>{{ publisher.owner }}</td>
+                    <td>{% for book in publisher.books %}
+                            <p>{{ book.title }}</p>
+                        {% endfor %}</td>
+                    </tr>
+                {% endfor %}
+            </table>
+            </div>
+        </div>
+    </div>
 
 </body>
 </html>

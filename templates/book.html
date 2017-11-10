@@ -1,0 +1,23 @@
+<html>
+	<head>
+		
+	</head>
+	<body>
+		<p>This is the books page</b>
+		<a href="{{url_for('index')}}">Main Menu</a> <br/>
+		<h1>Books</h1>
+		{% if books == [] %}
+			<p>No books exist</p>	
+			
+		{% else %}
+			{% for i in books %}
+				<div> 
+					{{i.title}}
+					
+					<br/> <br/>
+				</div>
+			{% endfor %}
+		{% endif %}
+	</body>
+</html>
+
