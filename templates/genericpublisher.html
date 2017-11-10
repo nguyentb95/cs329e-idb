@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>{{pid.publisher}}</title>
+    <title>{{publisher.name}}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
@@ -18,21 +18,23 @@
     <div class="container">
     <div class="row">
     <div class="col-sm-4">
-    <h1>{{pid.publisher}}</h1>
-    <h2>Publishing House</h2>
-    <h3>Published:</h3>
-	<h1>MANY TO ONE, THIS WILL REQUIRE A FOR LOOP</h1>
-    <a href={{ url_for('page',pagename='tokillamockingbird') }}><p>{{pid.book}}</p></a><br/>
-    <p></p>
-    <h3>Written by:</h3>
-	<h1>MANY TO ONE, THIS WILL REQUIRE A FOR LOOP</h1>
-    <a href={{ url_for('page',pagename='harperlee') }}><p>{{pid.author}}</p></a><br/>
-    </div>
-    <div class="col-sm-8">
-    <img src={{pid.img}} class="img-thumbnail" alt={{pid.publisher}}>
-    </div>
-    </div>
-    </div>
+    <h1>{{publisher.name}}</h1>
+                <h2>Publisher</h2>
+                <h3>Published Books:</h3>
+				{% for book in publisher.books %}
+                    <a href="{{ url_for('bookpage', bookisbn=book.isbn) }}"><h4>{{ book.title }}</h4></a>
+                {% endfor %}
+                <h3>Published Authors:</h3>
+                {% for author in publisher.authors %}
+                    <a href="{{ url_for('authorpage', authorname=author.name) }}"><h4>{{ author.name }}</h4></a>
+                {% endfor %}
+            </div>
+            <div class="col-sm-8">
+                <img src={{publisher.image}} class="img-thumbnail" alt={{publisher.name}}>
+
+        </div>
+        </div>
+        </div>
 
 
 </body>

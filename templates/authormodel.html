@@ -37,10 +37,10 @@
                 </tr>
                 {% for author in authorRows %}
                     <tr>
-                    <td>{{ author.name }}</td>
+                    <td><a href="{{ url_for('authorpage', authorname=author.name) }}">{{ author.name }}</a></td>
                     <td>{{ author.birthDate }}</td>
                     <td>{% for book in author.books %}
-                        {{ book.title }}
+                        <a href="{{ url_for('bookpage', bookisbn=book.isbn) }}">{{ book.title }}</a>
                         <br>
                         <br>
                         {% endfor %}</td>

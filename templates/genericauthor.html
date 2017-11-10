@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>{{aid.authorname}}</title>
+    <title>{{author.name}}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel=stylesheet type=text/css href="{{ url_for('static', filename='bootstrap.min.css') }}">
     <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
@@ -18,18 +18,19 @@
     <div class="container">
      <div class="row">
             <div class="col-sm-4">
-                <h1>{{aid.author}}</h1>
+                <h1>{{author.name}}</h1>
                 <h2>Author</h2>
                 <h3>Author of:</h3>
-				<h1>MANY TO ONE RELATIONSHIP, WILL NEED A FOR LOOP</h1>
-                <a href={{ url_for('page',pagename='tokillamockingbird') }}><p>{{aid.book}}</p></a><br/>
-                <p></p>
+				{% for book in author.books %}
+                    <a href="{{ url_for('bookpage', bookisbn=book.isbn) }}"><h4>{{ book.title }}</h4></a>
+                {% endfor %}
                 <h3>Published by:</h3>
-				<h1>MANY TO ONE, THIS WILL REQUIRE A FOR LOOP</h1>
-                <a href={{ url_for('page',pagename='harpercollins') }}><p>{{aid.publisher}}</p></a><br/>
+                {% for publisher in author.publishers %}
+                    <a href="{{ url_for('publisherpage', publishername=publisher.name) }}"><h4>{{ publisher.name }}</h4></a>
+                {% endfor %}
             </div>
             <div class="col-sm-8">
-                <img src={{aid.img}} class="img-thumbnail" alt={{aid.author}}>
+                <img src={{author.image}} class="img-thumbnail" alt={{author.name}}>
             </div>
     </div>
 </body>
