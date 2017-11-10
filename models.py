@@ -49,7 +49,7 @@ class Author(Base):
     __tablename__ = "author"
     name = Column(String(250), primary_key=True)
     birthDate = Column(String(100))
-    education = Column(String(80))
+    education = Column(String(500))
     nationality = Column(String(80))
     alma_mater = Column(String(500))
     wikipedia = Column(String(1000))
@@ -70,7 +70,7 @@ class Publisher(Base):
     parentCompany = Column(String(250))
     owner = Column(String(250))
     location = Column(String(100))
-    yearFounded = Column(String(10))
+    yearFounded = Column(String(100))
     image = Column(String(1000))
     website = Column(String(250))
     wikipedia = Column(String(250))
