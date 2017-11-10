@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TESTPAGE</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel=stylesheet type=text/css href="{{ url_for('static', filename='bootstrap.min.css') }}">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+</head>
+<body>
+    <nav class="navbar navbar-default">
+    <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="{{ url_for('page', pagename='index') }}">Home</a>
+    </div>
+    </div>
+   </nav>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4">
+			<h1>BOOKS</h1>
+			{%if books ==[]%}
+				<p>Book Test failed <p>
+			{%else%}
+				{%for i in books%}
+				<a href={{ url_for('genericbook',bid = i.id) }}><h2>{{i.book}}</h2></a><br/>
+				{%endfor%}
+			{%endif%}
+			<h1>AUTHORS</h1>
+			{%if authors ==[]%}
+				<p> Author Test Failed</p>
+			{%else%}
+				{%for j in authors%}
+				<a href={{ url_for('genericauthor',aid = j.id) }}><h2>{{j.author}}</h2></a><br/>
+				{%endfor%}
+			{%endif%}
+			<h1>PUBLISHERS</h1>
+			{%if publishers ==[]%}
+				<p> Publisher Test Failed</p>
+			{%else%}
+				{%for h in publishers%}
+				<a href={{ url_for('genericpublisher',pid = h.id) }}><h2>{{h.publisher}}</h2></a><br/>
+				{%endfor%}
+			{%endif%}
+           
+            </div>
+        </div>
+    </div>
+</body>
+</html>

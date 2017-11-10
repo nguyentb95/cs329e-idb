@@ -36,6 +36,21 @@
             <th>Pages</th>
             <th>YearPublished</th>
         </tr>
+		{%if books ==[]%}
+				<p>Book Test failed <p>
+			{%else%}
+				{%for i in books%}
+				<tr>
+					<td><a href={{ url_for('genericbook',bid = i.id) }}><p>{{i.book}}</p></a></td>
+					<td>i.isbn</td>
+					<td>ID of author of book</td>
+					<td><a href={{ url_for('page',pagename='simonschuster') }}><p>Simon Schuster</p></a></td>
+					<td>i.pages</td>
+					<td>i.year</td>
+				</tr>
+				
+				{%endfor%}
+			{%endif%}
         <tr>
             <td><a href={{ url_for('page',pagename='theemperorofallmaladies') }}><p>The Emperor of All Maladies</p></a></td>
             <td>9781439107959</td>
