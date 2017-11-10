@@ -37,10 +37,10 @@
                 </tr>
                 {% for book in bookRows %}
                     <tr>
-                    <td>{{ book.title }}</td>
+                        <td><a href="{{ url_for('bookpage', bookisbn=book.isbn) }}">{{ book.title }}</a></td>
                     <td>{{ book.isbn }}</td>
-                    <td>{{ book.author }}</td>
-                    <td>{{ book.publisher }}</td>
+                        <td><a href="{{ url_for('authorpage', authorname=book.author) }}">{{ book.author }}</a></td>
+                        <td><a href="{{ url_for('publisherpage', publishername=book.publisher) }}">{{ book.publisher }}</a></td>
                     <td>{{ book.datePublished }}</td>
                     </tr>
                 {% endfor %}

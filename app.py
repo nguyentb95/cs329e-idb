@@ -21,17 +21,36 @@ def page(pagename):
 @app.route('/bookmodel')
 def book():
     return render_template('bookmodel.html',
-                           bookRows = session.query(Book).all()
+                           bookRows = session.query(Book).order_by(Book.title).all()
                            )
 @app.route('/authormodel')
 def author():
     return render_template('authormodel.html',
-                           authorRows = session.query(Author).all()
+                           authorRows = session.query(Author).order_by(Author.name).all()
                            )
 @app.route('/publishermodel')
 def publisher():
     return render_template('publishermodel.html',
-                           publisherRows = session.query(Publisher).all()
+                           publisherRows = session.query(Publisher).order_by(Publisher.name).all()
+                           )
+
+@app.route('/bookpage/<string:bookisbn>')
+def bookpage(bookisbn):
+    return render_template('genericbook.html',
+                           book = session.query(Book).filter(Book.isbn == bookisbn).one()
+                           )
+
+@app.route('/authorpage/<string:authorname>')
+def authorpage(authorname):
+    print(authorname)
+    return render_template('genericauthor.html',
+                           author = session.query(Author).filter(Author.name == authorname).one()
+                           )
+
+@app.route('/publisherpage/<string:publishername>')
+def publisherpage(publishername):
+    return render_template('genericpublisher.html',
+                           publisher = session.query(Publisher).filter(Publisher.name == publishername).one()
                            )
 
 @app.route('/test/') #put this into index later
