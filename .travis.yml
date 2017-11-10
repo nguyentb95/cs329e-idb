@@ -18,4 +18,4 @@ install:
     - pip install gunicorn
 
 script:
-    - pytest test_app.py
+    - python test.py
