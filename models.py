@@ -79,7 +79,7 @@ class Publisher(Base):
     books = relationship("Book")
 
 
-SQLALCHEMY_DATABASE_URI = os.getenv('SQLALCHEMY_DATABASE_URI', 'postgresql+psycopg2://postgres:cs329e@/digitalbinding?host=/cloudsql/digitalbinding:us-central1:digitalbindingdb')
+SQLALCHEMY_DATABASE_URI = os.getenv('SQLALCHEMY_DATABASE_URI', 'postgresql://postgres:blank@localhost/digitalbinding')
 engine = create_engine(SQLALCHEMY_DATABASE_URI)
 
 #Base.metadata.drop_all(engine)
