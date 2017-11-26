@@ -82,5 +82,5 @@ class Publisher(Base):
 SQLALCHEMY_DATABASE_URI = os.getenv('SQLALCHEMY_DATABASE_URI', 'postgresql://postgres:blank@localhost/digitalbinding')
 engine = create_engine(SQLALCHEMY_DATABASE_URI)
 
-Base.metadata.drop_all(engine)
+#Base.metadata.drop_all(engine)
 Base.metadata.create_all(engine)

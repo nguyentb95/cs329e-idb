@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>{{bid.book}}</title>
+    <title>{{book.title}}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel=stylesheet type=text/css href="{{ url_for('static', filename='bootstrap.min.css') }}">
     <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
@@ -18,17 +18,14 @@
     <div class="container">
         <div class="row">
             <div class="col-sm-4">
-                <h1>{{bid.book}}</h1>
+                <h1>{{book.title}}</h1>
                     <h2>Written by</h2>
-					<h1>MANY TO ONE, THIS WILL REQUIRE A FOR LOOP</h1>
-                <a href={{ url_for('page',pagename='harperlee') }}><h2>{{bid.author}}</h2></a><br/>
-                    <h3>Published by</h3>
-					<h1>MANY TO ONE, THIS WILL REQUIRE A FOR LOOP</h1>
-                <a href={{ url_for('page',pagename='harpercollins') }}><h3>{{bid.publisher}}</h3></a><br/>
-                <p>Google ID: {{bid.googleid}}</p>
+                <a href="{{ url_for('authorpage', authorname=book.author) }}"><h3>{{ book.author }}</h3></a>
+                <h2>Published by</h2>
+                <a href="{{ url_for('publisherpage', publishername=book.publisher) }}"><h3>{{ book.publisher }}</h3></a>
             </div>
             <div class="col-sm-8">
-                <img src ={{bid.img}} class="img-thumbnail" alt={{bid.bookname}}>
+                <img src ={{book.image}} class="img-thumbnail" alt={{book.title}}>
             </div>
 
         </div>

@@ -9,13 +9,19 @@ before_install:
 #notifications:
   #slack: cs329e-fall-2017:TWFzxBtOzsFmRkNjOTyP3bXA
 
+addons:
+    postgresql: "9.5"
+
+services:
+  - postgresql
+
 install:
-    - pip install flask
-    - pip install coverage
-    - pip install numpy
-    - pip install pytest
-    - pip install requests
-    - pip install gunicorn
+     - pip install --upgrade pip
+     - pip --version
+     - pip install -r requirements.txt
+     
+before_script:
+     - psql -c 'create database digitalbinding;' -U postgres
 
 script:
-    - pytest test_app.py
+    - python test.py
