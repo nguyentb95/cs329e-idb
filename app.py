@@ -14,6 +14,23 @@ app = Flask(__name__)
 def index():
     return render_template('index.html')
 
+@app.route('/search')
+def search():
+    return render_template('search.html',
+                           results = False)
+
+@app.route('/search', methods=['GET','POST'])
+def searchResults():
+    searchterm = request.form['text']
+    print(searchterm)
+    return render_template('search.html',
+                            results = True,
+                            searchResultsBooks = session.query(Book).filter(Book.title.like('%' + searchterm + '%')).all(),
+                            searchResultsAuthors = session.query(Author).filter(Author.name.like('%'+ searchterm + '%')).all(),
+                            searchResultsPublishers = session.query(Publisher).filter(Publisher.name.like('%' + searchterm +'%'))
+                            )
+
+
 @app.route('/<string:pagename>')
 def page(pagename):
     return render_template(pagename.lower()+'.html')
