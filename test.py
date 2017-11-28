@@ -73,5 +73,18 @@ class DBTestCases(unittest.TestCase):
         session.query(Publisher).filter_by(name = 'Pottermore').delete()
         session.commit()
 
+    def publisher_2(self):
+        s = Publisher(name='Scholastic', parentCompany = 'Scholastic', owner = "Public Company", location = "U.S.", yearFounded = "1920-10-22", image="https://www.dedicatedteacher.com/media/images/publishers/large/sch_700.jpg", website = "http://www.scholastic.com/home/", wikipedia= "https://en.wikipedia.org/wiki/Scholastic_Corporation", description="Scholastic Corporation is an American multinational publishing, education and media company known for publishing, selling, and distributing books and educational materials for schools, teachers, parents, and children. ")
+        session.add(s)
+        session.commit()
+
+
+        r = session.query(Publisher).filter_by(name = 'Scholastic').one()
+        self.assertEqual(str(r.name), 'Scholastic')
+
+        session.query(Publisher).filter_by(name = 'Scholastic').delete()
+        session.commit()
+
+
 if __name__ == '__main__':
     unittest.main()
