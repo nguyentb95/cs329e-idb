@@ -22,7 +22,7 @@ class DBTestCases(unittest.TestCase):
         session.query(Book).filter_by(isbn = '20').delete()
         session.commit()
 
-    def book_1(self):
+    def book_2(self):
         s = Book(isbn='33', title = 'How to be Awesome', google_id = "11", datePublished = "2017-11-11", description = "Best book of all time.", image="https://cdn.business2community.com/wp-content/uploads/2016/03/Vd3MJo.jpg")
         session.add(s)
         session.commit()
@@ -36,7 +36,7 @@ class DBTestCases(unittest.TestCase):
 
 
     def author_1(self):
-        s = Author(name='harperlee', birthDate = '1965-07-31', education = "achelor of Arts", nationality = "British", alma_mater = "University of Exeter", wikipedia="https://en.wikipedia.org/wiki/J._K._Rowling", image="http://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/J._K._Rowling_2010.jpg/220px-J._K._Rowling_2010.jpg", description="oanne \"Jo\" Rowling, OBE, FRSL, pen names J. K. Rowling and Robert Galbraith, is a British novelist, screenwriter and film producer best known as the author of the Harry Potter fantasy series.")
+        s = Author(name='harperlee', birthDate = '1965-07-31', education = "Bachelor of Arts", nationality = "British", alma_mater = "University of Exeter", wikipedia="https://en.wikipedia.org/wiki/J._K._Rowling", image="http://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/J._K._Rowling_2010.jpg/220px-J._K._Rowling_2010.jpg", description="oanne \"Jo\" Rowling, OBE, FRSL, pen names J. K. Rowling and Robert Galbraith, is a British novelist, screenwriter and film producer best known as the author of the Harry Potter fantasy series.")
         session.add(s)
         session.commit()
 
@@ -46,6 +46,20 @@ class DBTestCases(unittest.TestCase):
 
         session.query(Author).filter_by(name= 'harperlee').delete()
         session.commit()
+
+    def author_2(self):
+        s = Author(name='cslewis', birthDate = '1898-11-29', education = "Bachelor of Arts", nationality = "Irish", alma_mater = "University of Oxford", wikipedia="https://en.wikipedia.org/wiki/C._S._Lewis", image="https://upload.wikimedia.org/wikipedia/en/1/1e/C.s.lewis3.JPG", description="Clive Staples Lewis was a British novelist, poet, academic, medievalist, literary critic, essayist, lay theologian, broadcaster, lecturer, and Christian apologist. He held academic positions at both Oxford University and Cambridge University.")
+        session.add(s)
+        session.commit()
+
+
+        r = session.query(Author).filter_by(name = 'cslewis').one()
+        self.assertEqual(str(r.name), 'cslewis')
+
+        session.query(Author).filter_by(name= 'cslewis').delete()
+        session.commit()
+
+
 
     def publisher_1(self):
         s = Publisher(name='Pottermore', parentCompany = 'C++', owner = "Yuto", location = "England", yearFounded = "1965-07-31", image="http://upload.wikimedia.org/wikipedia/en/thumb/6/6f/Pottermore.png/225px-Pottermore.png", website = "http://www.pottermore.com\nshop.pottermore.com", wikipedia= "http://www.pottermore.com\nshop.pottermore.com", description="Pottermore is the digital publishing, e-commerce, entertainment, and news company from J.K. Rowling and is the global digital publisher of Harry Potter and J.K. Rowling's Wizarding World.")
