@@ -82,16 +82,17 @@ class DBTestCases(unittest.TestCase):
         session.query(Author).filter_by(name= 'chuck').delete()
         session.commit()
 
+
     def test_publisher_1(self):
-        s = Publisher(name='Pottermore', parentCompany = 'C++', owner = "Yuto", location = "England", yearFounded = "1965-07-31", image="http://upload.wikimedia.org/wikipedia/en/thumb/6/6f/Pottermore.png/225px-Pottermore.png", website = "http://www.pottermore.com\nshop.pottermore.com", wikipedia= "http://www.pottermore.com\nshop.pottermore.com", description="Pottermore is the digital publishing, e-commerce, entertainment, and news company from J.K. Rowling and is the global digital publisher of Harry Potter and J.K. Rowling's Wizarding World.")
+        s = Publisher(name='Pottermare', parentCompany = 'C++', owner = "Yuto", location = "England", yearFounded = "1965-07-31", image="http://upload.wikimedia.org/wikipedia/en/thumb/6/6f/Pottermore.png/225px-Pottermore.png", website = "http://www.pottermore.com\nshop.pottermore.com", wikipedia= "http://www.pottermore.com\nshop.pottermore.com", description="Pottermore is the digital publishing, e-commerce, entertainment, and news company from J.K. Rowling and is the global digital publisher of Harry Potter and J.K. Rowling's Wizarding World.")
         session.add(s)
         session.commit()
 
 
-        r = session.query(Publisher).filter_by(name = 'Pottermore').one()
-        self.assertEqual(str(r.name), 'Pottermore')
+        r = session.query(Publisher).filter_by(name = 'Pottermare').one()
+        self.assertEqual(str(r.name), 'Pottermare')
 
-        session.query(Publisher).filter_by(name = 'Pottermore').delete()
+        session.query(Publisher).filter_by(name = 'Pottermare').delete()
         session.commit()
 
     def test_publisher_2(self):
