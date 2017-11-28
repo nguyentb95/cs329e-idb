@@ -25,7 +25,6 @@ def search():
 @app.route('/search', methods=['GET','POST'])
 def searchResults():
     searchterm = request.form['text']
-    print(searchterm)
     return render_template('search.html',
                             results = True,
                             searchResultsBooks = session.query(Book).filter(Book.title.ilike('%' + searchterm + '%')).all(),
@@ -62,7 +61,6 @@ def bookpage(bookisbn):
 
 @app.route('/authorpage/<string:authorname>')
 def authorpage(authorname):
-    print(authorname)
     return render_template('genericauthor.html',
                            author = session.query(Author).filter(Author.name == authorname).one()
                            )
