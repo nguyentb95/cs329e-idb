@@ -7,6 +7,7 @@ from models import Base, Book, Author, Publisher, engine
 from create_db import create_books, session
 import subprocess
 import json
+import test
 
 app = Flask(__name__)
 
@@ -75,8 +76,8 @@ def publisherpage(publishername):
 
 @app.route('/unittests')
 def unittests():
-    output = subprocess.getoutput("test.py")
-    return json.dumps({'output': str(output)})
+    output = subprocess.getoutput("python test.py")
+    return json.dumps({'output': str(output)},sort_keys=True,indent=4 )
 
 if __name__ == '__main__':
     app.run('127.0.0.1', port = 8080, debug=True)
