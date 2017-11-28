@@ -132,7 +132,7 @@ def create_books():
 
         if addBook(newBook):
             session.commit()
-            print("Skip")
+            #print("Skip")
             continue
 
 
