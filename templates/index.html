@@ -13,20 +13,21 @@
         {
             background-color: #2980b9;
             color: #ffffff;
-            padding: 100px 25px;
+            padding: 100px 0px;
             font-family: Garamond;
         }
     </style>
 </head>
 <body>
    <nav class="navbar navbar-default">
-  <div class="container-fluid">
+  <div class="container-fluid" >
     <div class="navbar-header">
       <a class="navbar-brand" href="{{ url_for('page', pagename='index') }}">Home</a>
     </div>
       <ul class="nav navbar-nav">
           <li><a href = {{ url_for('page',pagename='about') }}>About</a></li>
           <li><a href = {{ url_for('search') }}>Search</a></li>
+          <li><a href = {{ url_for('unittests') }}>Unit Tests</a></li>
       </ul>
 
   </div>

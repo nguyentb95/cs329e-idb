@@ -5,6 +5,8 @@ from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 from models import Base, Book, Author, Publisher, engine
 from create_db import create_books, session
+import subprocess
+import json
 
 app = Flask(__name__)
 
@@ -25,9 +27,9 @@ def searchResults():
     print(searchterm)
     return render_template('search.html',
                             results = True,
-                            searchResultsBooks = session.query(Book).filter(Book.title.like('%' + searchterm + '%')).all(),
-                            searchResultsAuthors = session.query(Author).filter(Author.name.like('%'+ searchterm + '%')).all(),
-                            searchResultsPublishers = session.query(Publisher).filter(Publisher.name.like('%' + searchterm +'%'))
+                            searchResultsBooks = session.query(Book).filter(Book.title.ilike('%' + searchterm + '%')).all(),
+                            searchResultsAuthors = session.query(Author).filter(Author.name.ilike('%'+ searchterm + '%')).all(),
+                            searchResultsPublishers = session.query(Publisher).filter(Publisher.name.ilike('%' + searchterm +'%'))
                             )
 
 
@@ -70,11 +72,11 @@ def publisherpage(publishername):
                            publisher = session.query(Publisher).filter(Publisher.name == publishername).one()
                            )
 
-@app.route('/test/') #put this into index later
-def testbooks():
-    return render_template('testpage.html')
 
-
+@app.route('/unittests')
+def unittests():
+    output = subprocess.getoutput("test.py")
+    return json.dumps({'output': str(output)})
 
 if __name__ == '__main__':
     app.run('127.0.0.1', port = 8080, debug=True)
