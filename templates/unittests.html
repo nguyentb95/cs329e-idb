@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel=stylesheet type=text/css href="{{ url_for('static', filename='bootstrap.min.css') }}">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+    <title>Digital Binding</title>
+
+</head>
+<body>
+
+<h1>Unit Tests</h1>
+{% for line in  output%}
+    <h3>{{ line }}</h3>
+{% endfor %}
+
+
+</body>
+</html>

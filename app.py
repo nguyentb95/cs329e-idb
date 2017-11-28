@@ -77,7 +77,8 @@ def publisherpage(publishername):
 @app.route('/unittests')
 def unittests():
     output = subprocess.getoutput("python test.py")
-    return json.dumps({'output': str(output)},sort_keys=True,indent=4 )
+    return render_template('unittests.html',
+                           output = output.split("\n"))
 
 if __name__ == '__main__':
     app.run('127.0.0.1', port = 8080, debug=True)
